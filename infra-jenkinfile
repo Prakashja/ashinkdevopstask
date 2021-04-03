@@ -18,6 +18,7 @@ pipeline {
             steps{
                 script {
                     sh '''
+		    echo "Run Terraform"
                     cd terraform
                     terraform init
                     terraform apply --auto-approve
