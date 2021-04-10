@@ -18,6 +18,7 @@ pipeline {
             steps{
                 script {
                     sh '''
+                    echo "welcome to terraform pipeline"
                     cd terraform
                     terraform init
                     terraform apply --auto-approve
